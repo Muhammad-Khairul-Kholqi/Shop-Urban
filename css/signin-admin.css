@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=EB+Garamond:wght@500&family=Inter:wght@500&family=Montserrat:wght@500&family=Nunito:ital,wght@0,600;0,700;0,1000;1,900&family=Roboto+Serif&family=Roboto+Slab:wght@500;600&family=Roboto:ital,wght@0,700;1,500&family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Nunito:ital,wght@0,600;1,700&family=Roboto+Slab&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Nunito:ital,wght@0,600;1,700&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@0,500;0,700;1,400;1,500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.login-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 12%;
+}
+
+.page-kiri img {
+    width: 300px;
+    margin-right: 50px;
+}
+
+form {
+    border: 2px solid #000;
+    width: 370px;
+    height: 420px;
+    border-radius: 10px;
+}
+
+.title-login p {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    cursor: default;
+}
+
+.input-text {
+    width: 280px;
+    height: 30px;
+    margin-top: 50px;
+    padding-left: 5px;
+    border-radius: 7px;
+    border: 2px solid #000;
+}
+
+.input-text:focus {
+    outline: none;
+}
+
+.input-password {
+    width: 200px;
+    height: 25px;
+    border: none;
+    margin-right: 48px;
+}
+
+.all-input-chk {
+    border: 2px solid #000;
+    width: 280px;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.input-chk {
+    cursor: pointer;
+}
+
+.input-password:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #000;
+    font-size: 14px
+}
+
+label {
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-remember {
+    margin-left: 45px;
+    cursor: pointer;
+}
+
+button {
+    width: 280px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    background-color: #068FFF;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button:hover {
+    background-color: #0A6EBD;
+    cursor: pointer;
+}
+
+/* responsive */
+
+@media (max-width: 955px) {
+    .page-kiri img {
+        width: 250px;
+        margin-top: 30px;
+    }
+
+    form {
+        width: 320px;
+        height: 400px;
+    }
+
+    .title-login p {
+        font-size: 25px;
+    }
+
+    .input-text {
+        width: 250px;
+    }
+
+    .all-input-chk {
+        width: 250px;
+    }
+
+    .input-password {
+        width: 173px;
+        margin-top: 2px;
+    }
+
+    .input-remember {
+        margin-left: -1px;
+        margin-left: 35px;
+    }
+
+    button {
+        width: 250px;
+    }
+}
+
+@media (max-width: 825px) {
+    .login-page {
+        padding: 80px 8%;
+    }
+}
+
+@media (max-width: 745px) {
+    .page-kiri img {
+        width: 200px;
+        margin-top: 60px;
+    }
+
+    form {
+        border: 2px solid #000;
+        width: 300px;
+        height: 380px;
+        border-radius: 10px;
+    }
+
+    .input-text {
+        width: 230px;
+    }
+
+    .all-input-chk {
+        width: 230px;
+    }
+
+    .input-password {
+        width: 155px;
+        margin-top: 2px;
+    }
+
+    button {
+        width: 230px;
+    }
+}
+
+@media (max-width: 660px) {
+    .login-page {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .page-kiri img {
+        margin-top: -50px;
+        margin-right: 0; 
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    form {
+        margin-top: 20px;
+        width: 340px;
+        height: 420px;
+    }
+
+    .input-text {
+        width: 250px;
+    }
+
+    .input-password {
+        width: 170px;
+    }
+    
+    .all-input-chk {
+        width: 250px;
+    }
+
+    .input-remember {
+        margin-left: 45px;
+    }
+
+    button {
+        width: 250px;
+    }
+}
+
+@media (max-width: 410px) {
+    .page-kiri img {
+        width: 250px;
+    }
+
+    form {
+        width: 280px;
+        height: 420px;
+    }
+
+    .input-text {
+        width: 220px;
+    }
+
+    .input-password {
+        width: 140px;
+    }
+    
+    .all-input-chk {
+        width: 220px;
+    }
+
+    .input-remember {
+        margin-left: -1px;
+        margin-left: 30px;
+    }
+
+    button {
+        width: 220px;
+    }
+}
+
+@media (max-width: 335px) {
+    .page-kiri img {
+        width: 200px;
+    }
+
+    form {
+        width: 250px;
+    }
+
+    .input-text {
+        width: 200px;
+    }
+
+    .input-password {
+        width: 120px;
+    }
+    
+    .all-input-chk {
+        width: 200px;
+    }
+
+    .input-remember {
+        margin-left: 25px;
+    }
+
+    button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 300px) {
+    .page-kiri img {
+        width: 180px;
+    }
+
+    form {
+        width: 220px;
+    }
+
+    .title-login p {
+        font-size: 20px;
+    }
+
+    .input-text {
+        width: 170px;
+    }
+
+    .input-password {
+        width: 90px;
+    }
+    
+    .all-input-chk {
+        width: 170px;
+    }
+
+    button {
+        width: 170px;
+    }
+}
