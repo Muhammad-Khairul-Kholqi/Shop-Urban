@@ -18,6 +18,21 @@
         </div>
     </div>
 
+    <div class="notifikasi-help-troli">
+      <div class="notifikasi">
+        <p><a href="">Notifications</a></p>
+        <a href=""><img class="lonceng" src="img/bell.png" alt=""></a>
+      </div>
+      <div class="help">
+        <p><a href="">Help</a></p>
+        <a href=""><img class="question" src="img/question.png" alt=""></a>
+      </div>
+      <div class="troli">
+        <p class="title-troli"><a href="">My Trolley</a></p>
+        <a href=""><img class="troli-saya" src="img/shopping-cart.png" alt=""></a>
+      </div>
+    </div>
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   const noCsElement = document.querySelector(".no-cs");
