@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* bagian atas */
+.bagian-atas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
+
+.all-bagian-atas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 10%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.all-right {
+    display: flex;
+}
+
+.all-right img {
+    width: 80px;
+}
+
+.all-right p {
+    margin-top: 5px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    margin-right: 50px;
+    cursor: default;
+}
+
+.title-logo1 {
+    font-size: 35px;
+}
+
+button {
+    width: 90px;
+    height: 40px;
+    margin-top: 23px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 1px 1px 5px #000;
+}
+
+.signin {
+    margin-right: 10px;
+    background-color: transparent;
+    border: #068FFF solid 2px;
+}
+
+.signup {
+    border: none;
+    background-color: #068FFF;
+    color: #fff;
+}
+
+.slides .slide img {
+    width: 100%;
+    margin-top: 110px;
+    height: 420px;
+}
+
+.dots-container {
+    margin-top: -50px;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #000;
+}
+
+.halaman-bawah {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 5%;
+    margin-top: 50px;
+}
+
+.paling-kiri img {
+    width: 150px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.tengah-kiri {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    cursor: default;
+}
+
+.tengah-kiri p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: 000;
+    line-height: 30px;
+}
+
+.tengah-kiri span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tengah-kanan {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    cursor: default;
+}
+
+.tengah-kanan p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: 000;
+    line-height: 30px;
+    cursor: default;
+}
+
+.tengah-kanan span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sosmed {
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+.sosmed img {
+    width: 25px;
+    margin-left: 2px;
+    margin-top: 10px;
+}
+
+.sosmed img:hover {
+    transform: scale(1.1);
+}
+
+.sosmed p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.paling-kanan {
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+.paling-kanan p {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: default;
+}
+
+.paling-kanan img {
+    margin-top: 10px;
+    width: 50px;
+}
+
+.copyright {
+    background-color: #D9D9D9;
+    padding: 7px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+
+/* responsive */
+@media (max-width: 560px) {
+    .all-right img {
+        width: 70px;
+    }
+
+    .all-right p {
+        font-size: 10px;
+    }
+
+    .title-logo1 {
+        font-size: 30px;
+    }
+
+    button {
+        width: 80px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .all-bagian-atas {
+        padding: 15px 7%;
+    }
+}
+
+@media (max-width: 465px) {
+    .all-right img {
+        width: 60px;
+    }
+
+    .all-right p {
+        font-size: 9px;
+        margin-top: -1px;
+        margin-top: 5px;
+    }
+
+    .title-logo1 {
+        font-size: 25px;
+    }
+
+    button {
+        width: 70px;
+        height: 30px;
+        font-size: 15px;
+        margin-top: -5px;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 415px) {
+    .all-right p {
+        display: none;
+    }
+}
+
+@media (max-width: 775px) {
+    .slides .slide img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 775px) {
+    .slides .slide img {
+        height: 300px;
+    }
+
+    .dots-container {
+        margin-top: 1px;
+        margin-top: -30px;
+    }
+}
+
+@media (max-width: 580px) {
+    .slides .slide img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 560px) {
+    .slides .slide img {
+        margin-top: -1px;
+        margin-top: 100px;
+    }
+
+    .dot {
+        height: 10px;
+        width: 10px;
+    }
+}
+
+@media (max-width: 464px) {
+    .slides .slide img {
+        margin-top: -1px;
+        margin-top: 90px;
+        height: 230px;
+    }
+}
+
+@media (max-width: 400px) {
+    .slides .slide img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 340px) {
+    .slides .slide img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .paling-kiri img {
+        width: 100px;
+    }
+
+    .tengah-kanan span, .tengah-kiri span {
+        font-size: 18px
+    }
+
+    .tengah-kiri p {
+        font-size: 15px;
+    }
+
+    .tengah-kanan p {
+        font-size: 15px;
+    }
+
+    .paling-kanan p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 413px) {
+    .paling-kiri img {
+        width: 90px;
+    }
+
+    .tengah-kanan span, .tengah-kiri span {
+        font-size: 15px
+    }
+
+    .tengah-kiri p {
+        font-size: 12px;
+    }
+
+    .tengah-kanan p {
+        font-size: 12px;
+    }
+
+    .paling-kanan p {
+        font-size: 15px;
+    }
+
+    .sosmed img {
+        width: 20px;
+    }
+
+    .paling-kanan img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 365px) {
+    .paling-kiri img {
+        width: 80px;
+    }
+
+    .tengah-kanan span, .tengah-kiri span {
+        font-size: 12px
+    }
+
+    .tengah-kiri p {
+        font-size: 10px;
+    }
+
+    .tengah-kanan p {
+        font-size: 10px;
+    }
+
+    .paling-kanan p {
+        font-size: 12px;
+    }
+
+    .sosmed img {
+        width: 15px;
+    }
+
+    .paling-kanan img {
+        width: 30px;
+    }
+}
+
+@media (max-width: 300px) {
+}
+
+
