@@ -44,6 +44,41 @@
     transform: scale(1.1);
 }
 
+.notifikasi-help-troli {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 5%;
+}
+
+.notifikasi, .help, .troli {
+    display: flex;
+    padding: 0 50px;
+}
+
+.notifikasi-help-troli p {
+    margin-top: 10px;
+    margin-right: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.notifikasi-help-troli a {
+    text-decoration: none;
+    color: #000;
+}
+
+.notifikasi-help-troli a:hover {
+    text-decoration: underline;
+}
+
+.notifikasi-help-troli img:hover {
+    filter: drop-shadow(1px 1px 3px #B4B4B3);
+}
+
+.notifikasi-help-troli img {
+    width: 40px;
+}
+
+
 @media (max-width: 470px) {
     .no-cs, .title-sosmed {
         font-size: 14px;
@@ -77,6 +112,36 @@
         height: 15px;
     }
 }
+
+@media (max-width: 775px) {
+    .notifikasi-help-troli img {
+        width: 30px;
+    }
+
+    .notifikasi-help-troli p {
+        font-size: 15px;
+        margin-top: -1px;
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 725px) {
+    .notifikasi-help-troli img {
+        width: 30px;
+    }
+
+    .notifikasi-help-troli p {
+        font-size: 13px;
+        margin-top: -1px;
+        margin-top: 6px;
+    }
+}
+
+@media (max-width: 695px) {
+  .title-troli {
+    margin-top: 100px;
+  }  
+} 
 
 
 
