@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.admin-page {
+    display: flex;  
+}
+
+.sidebar {
+    background-color: #fff;
+    box-shadow: 2px 0px 5px #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%; 
+    width: 250px; 
+}
+
+.header {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.header img {
+    width: 80px;
+    height: 85px;
+}
+
+.span-title {
+    font-size: 25px;
+    font-weight: bold;
+    color: #0E2954;
+}
+
+.header p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    margin-top: 7px;
+    color: #1B6B93;
+}
+
+.menu {
+    margin-top: 80px;
+    margin-left: 30px;
+}
+
+.menu-link {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.menu-link img {
+    width: 40px;
+}
+
+.menu-link p {
+    margin-left: 10px;
+    margin-top: 7px;
+    font-family: 'Roboto Slab', serif;
+    color: #000;
+}
+
+.menu-link a {
+    text-decoration: none;
+}
+
+.tombol-keluar a {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #5477EC;
+    border-radius: 5px;
+    width: 160px;
+    box-shadow: 0px 0px 7px #000;
+}
+
+.tombol-keluar a:hover {
+    background-color: #4942E4;
+}
+
+.tombol-keluar img {
+    width: 30px;
+    height: 40px;
+    margin-top: 4px;
+}
+
+.tombol-keluar p {
+    font-family: 'Roboto Slab', serif;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.main-content {
+    background-color: #fff;
+    margin-left: 250px; 
+    padding: 20px; 
+    overflow-y: auto; 
+}
+
