@@ -16,7 +16,7 @@
     top: 0;
     left: 0;
     height: 100%; 
-    width: 250px; 
+    width: 220px; 
 }
 
 .header {
@@ -75,7 +75,7 @@
     text-decoration: none;
     background-color: #5477EC;
     border-radius: 5px;
-    width: 160px;
+    width: 120px;
     box-shadow: 0px 0px 7px #000;
 }
 
@@ -99,8 +99,107 @@
 
 .main-content {
     background-color: #fff;
-    margin-left: 250px; 
+    margin-left: 200px; 
     padding: 20px; 
-    overflow-y: auto; 
+    overflow-x: auto; 
 }
 
+form {
+    display: flex;
+}
+
+.input-group input {
+    width: 340px;
+    height: 40px;
+    padding-left: 8px;
+    border: 2px solid #000;
+}
+
+button {
+    padding: 4px;
+    color: #fff;
+    background-color: #068FFF;
+    border: 2px solid #000;
+    border-left: none;
+}
+
+button:hover {
+    background-color: #337CCF;
+}
+
+.search-content {
+    margin-top: 20px;
+}
+
+.search-user {
+    display: flex;
+    background-color: red;
+    height: 100px;
+    margin-top: -20px;
+    /* width: 1190px; */
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        width: 150px; 
+    }
+
+    .header p {
+        display: none;
+    }
+
+    .header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .menu-link img {
+        margin-left: 20px;
+        width: 50px;
+    }
+
+    .menu-link p {
+        display: none;
+    }
+
+    .tombol-keluar p {
+        display: none;
+    }
+
+    .tombol-keluar img {
+        width: 50px;
+        height: 50px;
+        margin-left: -10px;
+    }
+
+    .tombol-keluar a {
+        width: 90px;
+    }
+
+    .main-content {
+        margin-left: 180px;
+    }
+}
+
+@media (max-width: 550px) {
+    .sidebar {
+        width: 120px; 
+    }
+
+    .header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .menu-link img {
+        margin-left: 2px;
+    }
+
+    .tombol-keluar a {
+        width: 70px;
+    }
+
+    .main-content {
+        margin-left: 150px;
+    }
+}

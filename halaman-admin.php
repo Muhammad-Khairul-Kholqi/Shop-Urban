@@ -18,29 +18,44 @@
                 </div>
                 <div class="menu">
                     <div class="menu-link">
-                        <a href=""><img src="img/dash.png" alt=""></a>
+                        <a href=""><img src="img/dash.png" alt="" title="Dashboard"></a>
                         <a href=""><p>Dashboard</p></a>
                     </div>
                     <div class="menu-link">
-                        <a href=""><img src="img/folder.png" alt=""></a>
+                        <a href=""><img src="img/folder.png" alt="" title="Categories"></a>
                         <a href=""><p>Categories</p></a>
                     </div>
                     <div class="menu-link">
-                        <a href=""><img src="img/list.png" alt=""></a>
+                        <a href=""><img src="img/list.png" alt="" title="Orders"></a>
                         <a href=""><p class="title-link">Orders</p></a>
                     </div>
                 </div>
                 <div class="tombol-keluar">
                     <center>
                     <a href="">
-                        <img src="img/logout.png">
+                        <img src="img/logout.png" title="LogOut">
                         <p>LogOut</p>
                     </a>
                     </center>
                 </div>
             </div>
             <div class="main-content">
-                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum neque repudiandae sed nihil tenetur libero impedit deleniti ipsa ex voluptates iste, sunt quae beatae iusto harum. Minus explicabo, totam enim fuga aliquam quidem. Molestias, ratione enim autem in eligendi iste. Fugit quia assumenda culpa ducimus magni at officiis est natus rerum sint a ratione id, iste repellendus blanditiis voluptas ipsa minus soluta? Reiciendis cupiditate, consectetur ipsam vel hic dicta voluptates ducimus! Debitis minus architecto doloribus, earum maiores voluptate, ipsum voluptates in placeat rerum reiciendis dolores nemo accusamus delectus totam voluptatem eligendi asperiores tempora quia cum impedit cupiditate natus odio. In?</h1>
+                <div class="search-user">
+                    <div class="search-content">
+                        <form action="" method="post">
+                            <div class="input-group">
+                                <input type="text" placeholder="Type" autocomplate="off">
+                            </div>
+                            <button type="button">Search</button>
+                        </form>
+                    </div>
+                    <div class="user">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, consectetur.</p>
+                    </div>
+                </div>
+                <div class="content">
+
+                </div>
             </div>
         </div>
     </body>
