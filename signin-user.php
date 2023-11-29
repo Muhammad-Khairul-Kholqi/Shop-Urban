@@ -1,3 +1,9 @@
+<?php
+session_start();
+require 'controller.php';
+
+// Check if the form is submitted
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,15 +20,20 @@
                 <img src="img/logoshop-text.png">
             </div>
             <div class="page-kanan">
-                <form action="" method="post">
+                <form action="" method="POST">
                     <div class="title-login">
                         <p>Login Account!</p>
                     </div>
-                    <center><input class="input-text" type="text" placeholder="Name" autocomplete="off" required></center>
+                    <?php
+                        if (isset($error)) {
+                            echo '<p style="color: red;text-align:center;">' . $error . '</p>';
+                        }
+                        ?>
+                    <center><input class="input-text" type="text" name="username" id="username" placeholder="username" autocomplete="off" required></center>
                         <br><br>
                     <center>
                         <div class="all-input-chk">
-                            <input class="input-password" id="pwd" type="password" placeholder="Password" autocomplete="off" required>
+                            <input class="input-password" id="pwd" type="password" name="password" id="password" placeholder="Password" autocomplete="off" required>
                             <input class="input-chk" type="checkbox" id="chk">
                         </div>
                     </center>
@@ -31,15 +42,17 @@
                     <label for="remember">Remember me</label>
                         <br><br>
                     <center><button type="submit" name="login">Sign in</button></center>
-                        <br><br>
+                    
+                        <br>
                     <a class="link-to-admin" href="signin-admin.php"><p class="to-admin">Login as admin</p></a>
+                   
                 </form>
             </div>
         </div>
     </div>
 
 <script>
-// untuk melihat password
+    // untuk melihat password
     const pwd = document.getElementById("pwd");
     const chk = document.getElementById("chk");
 
