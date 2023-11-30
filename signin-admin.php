@@ -1,3 +1,31 @@
+<?php
+session_start();
+require 'controller.php';
+
+// Check if the form is submitted
+if (isset($_POST['login'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $query = mysqli_query($server, "SELECT * FROM tbl_login_admin WHERE 
+                                    username = '$username' AND password = '$password'");
+
+    if (mysqli_num_rows($query) > 0) {
+        $fetch = mysqli_fetch_assoc($query);
+        $_SESSION['id'] = $fetch['id'];
+        $_SESSION['username'] = $fetch['username'];
+        $_SESSION['password'] = $fetch['password'];
+
+        // Redirect to index.php
+        header('location: halaman-admin.php');
+        exit();
+    } else {
+        // Set an error message
+        $error = "Incorrect username or password. Please try again.";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
