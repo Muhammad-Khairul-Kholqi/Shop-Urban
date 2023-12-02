@@ -57,20 +57,24 @@ button {
     cursor: pointer;
 }
 
-button:hover {
-    box-shadow: 1px 1px 5px #000;
-}
-
 .signin {
     margin-right: 10px;
     background-color: transparent;
     border: #068FFF solid 2px;
 }
 
+.signin:hover {
+    border: #068FFF solid 3px;
+}
+
 .signup {
     border: none;
     background-color: #068FFF;
     color: #fff;
+}
+
+.signup:hover {
+    background-color: #3081D0;
 }
 
 .slides .slide img {

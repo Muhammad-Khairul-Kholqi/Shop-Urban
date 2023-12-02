@@ -1,13 +1,4 @@
-<?php
-    session_start();
-    include("controller.php");
-    
-    if(isset($_SESSION['type'])) {
-        header("location: create-akun-user.php");
-        exit;
-    }
-    
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

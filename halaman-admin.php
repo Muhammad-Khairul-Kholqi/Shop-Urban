@@ -1,11 +1,3 @@
-    
-    <?php
-session_start();
-if(isset($_SESSION['type'])) {
-    header("location: signin-admin.php");
-    exit;
-}
-?>
     <!DOCTYPE html>
     <html lang="en">
     <head>

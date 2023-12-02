@@ -1,9 +1,3 @@
-<?php
-session_start();
-require 'controller.php';
-
-// Check if the form is submitted
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,11 +18,6 @@ require 'controller.php';
                     <div class="title-login">
                         <p>Login Account!</p>
                     </div>
-                    <?php
-                        if (isset($error)) {
-                            echo '<p style="color: red;text-align:center;">' . $error . '</p>';
-                        }
-                        ?>
                     <center><input class="input-text" type="text" name="username" id="username" placeholder="username" autocomplete="off" required></center>
                         <br><br>
                     <center>

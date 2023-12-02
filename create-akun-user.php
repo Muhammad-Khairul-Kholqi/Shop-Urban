@@ -1,48 +1,4 @@
-<?php
-session_start();
-include("controller.php");
 
-if(isset($_SESSION['type'])) {
-    header("location: signin-user.php");
-    exit;
-}
-
-if($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $alamat = $_POST["alamat"];
-    $umur = $_POST["umur"];
-    $gender = $_POST["gender"];
-    
-    // Check if a user with the same name and address already exists
-    $sql = "SELECT * FROM tbl_data_diri WHERE name = '$name' AND alamat = '$alamat' AND umur = '$umur' AND gender = '$gender'";
-    $result = mysqli_query($server, $sql);
-    
-    if (mysqli_num_rows($result) > 0) {
-        $message = "<i style='color: red; font-style: italic;'>Data already exists</i>";
-    } else {
-        // Insert the new user data into the database
-        $sql = "INSERT INTO tbl_data_diri (name, alamat, umur, gender) VALUES ('$name', '$alamat', '$umur', '$gender')";
-        if (mysqli_query($server, $sql)) {
-            echo "<script>
-            alert('Registration Successful');
-            document.location.href = 'datadiri.php?page=datadiri';
-            </script>";
-        } else {
-            echo "Failed";
-        }
-    }
-}
-
-if($server) {
-    echo "";
-} else {
-    echo "Connection failed" . '<br>';
-}
-
-if (isset($_SESSION['name'])) {
-    header("location: datadiri.php");
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
