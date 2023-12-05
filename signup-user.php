@@ -1,39 +1,5 @@
 <?php
 include("controller.php");
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-
-    // Hash the password
-    $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-
-    $sql = "SELECT * FROM tbl_login_user WHERE username = '$username'";
-    $result = mysqli_query($server, $sql);
-
-    if (mysqli_num_rows($result) > 0) {
-        $message = "<i style='color: red; font-style: italic;'>Username sudah terdaftar</i>";
-    } else {
-        $sql = "INSERT INTO tbl_login_user (username, password) VALUES ('$username', '$hashedPassword')";
-        if (mysqli_query($server, $sql)) {
-            echo "<script>
-            alert('Pendaftaran Berhasil');
-            document.location.href = 'index.php?page=index';
-            </script>";
-        } else {
-            echo "Gagal";
-        }
-    }
-}
-
-if ($server) {
-    echo "";
-} else {
-    echo "TIDAK BERHASIL" . '<br>';
-}
-
-if (isset($_SESSION['username'])) {
-    header("location: index.php");
-}
 
 ?>
 
@@ -46,7 +12,6 @@ if (isset($_SESSION['username'])) {
     <title>Shop Urban Outfitters</title>
     <link rel="icon" href="img/logoshop.png" type="png">
     <link rel="stylesheet" href="css/signup-user.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -103,22 +68,6 @@ if (isset($_SESSION['username'])) {
         chk2.onchange = function(e) {
             confirmPassword.type = chk2.checked ? "text" : "password";
         };
-
-        const Toast = Swal.mixin({
-  toast: true,
-  position: "top-end",
-  showConfirmButton: false,
-  timer: 3000,
-  timerProgressBar: true,
-  didOpen: (toast) => {
-    toast.onmouseenter = Swal.stopTimer;
-    toast.onmouseleave = Swal.resumeTimer;
-  }
-});
-Toast.fire({
-  icon: "success",
-  title: "Signed in successfully"
-});
     </script>
 
 </body>
