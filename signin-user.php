@@ -2,7 +2,32 @@
 session_start();
 require 'controller.php';
 
-// Check if the form is submitted
+if (isset($_POST['login'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    $query = mysqli_query($server, "SELECT * FROM tbl_login_user WHERE 
+                                    username = '$username' AND password = '$password'");
+
+    if (mysqli_num_rows($query) > 0) {
+        $fetch = mysqli_fetch_assoc($query);
+        $_SESSION['id'] = $fetch['id'];
+        $_SESSION['username'] = $fetch['username'];
+        $_SESSION['role'] = $fetch['role']; // Store the user role in the session
+
+        if ($_SESSION['role'] == 'admin') {
+            // Redirect admin to admin page
+            header('location: admin-dashboard.php');
+        } else {
+            // Redirect regular user to user page
+            header('location: create-akun-user.php');
+        }
+        exit();
+    } else {
+        // Set an error message
+        $error = "Invalid username or password. Please try again.";
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
