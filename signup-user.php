@@ -25,7 +25,7 @@
         <div class="konten-kiri">
             <img src="img/ilustrasi.png">
         </div>
-        <div class="konten-kiri">
+        <div class="konten-kanan">
             <form action="" class="konten-input">
                 <p class="title mt-2">Sign Up</p>
                 <p class="blockquote-footer mt-1">Sign Up Now</p>
